@@ -2,6 +2,8 @@
 
 Open-source split of a floating “Ask …” portfolio widget and a small **Anthropic Messages** adapter for **Next.js Pages Router**.
 
+![/assets/images/career-copilot.png](/assets/images/career-copilot.png)
+
 - **Workspace package:** [`packages/portfolio-assistant`](packages/portfolio-assistant) (publishable as npm `portfolio-assistant` or rename the `name` field before release).
 - **Demo app:** [`examples/next-pages`](examples/next-pages).
 
@@ -13,7 +15,7 @@ pnpm build
 pnpm dev
 ```
 
-Then open [http://localhost:3010](http://localhost:3010) and add `ANTHROPIC_API_KEY` to `examples/next-pages/.env.local` (see `examples/next-pages/.env.example`). The demo uses a **fictional** profile (“Jamie Chen”) so no real résumé data ships in this repo.
+Then open [http://localhost:3010](http://localhost:3010) and add `ANTHROPIC_API_KEY` to `examples/next-pages/.env.local` (see `examples/next-pages/.env.example`). The demo uses a **fictional** profile (“Taylor Segell”) so no real résumé data ships in this repo.
 
 **pnpm 11:** the first `pnpm install` on a machine may require allowing dependency build scripts (e.g. `esbuild`, `sharp`). If install errors with `ERR_PNPM_IGNORED_BUILDS`, run `pnpm approve-builds --all` once in this repo (the allowlist is persisted in the lockfile).
 

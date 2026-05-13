@@ -6,4 +6,4 @@
 
 `pages/api/chat.ts` wires a static sandbox system prompt via `createAnthropicPagesHandler`. Replace that string with your own context pipeline before going to production.
 
-The “Jamie Chen” profile is fictional and only exists to demo the OSS package.
+The “Taylor Segell” profile is fictional and only exists to demo the OSS package.

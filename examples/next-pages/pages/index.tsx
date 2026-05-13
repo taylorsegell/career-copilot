@@ -8,10 +8,10 @@ export default function HomePage() {
       <div className="mx-auto flex max-w-2xl flex-col gap-6 text-foreground">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            portfolio-assistant
+            career-copilot
           </p>
           <h1 className="mt-4 font-mono text-3xl font-semibold uppercase tracking-[0.12em] sm:text-4xl">
-            Example Next.js Pages app
+            Career Copilot Demo
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
             Add{' '}
@@ -24,9 +24,9 @@ export default function HomePage() {
         </div>
       </div>
       <ResumeAssistant
-        assistantTitle="Jamie Chen (demo)"
+        assistantTitle="Ask (Name)"
         triggerLabel="Ask demo"
-        defaultWelcomeMessage={`Hi — I'm Jamie's demo assistant. Ask about ingestion design or how this widget wires to Claude behind /api/chat.`}
+        defaultWelcomeMessage={`Hi — I'm Taylor's demo assistant. Ask about how this widget wires to Claude behind /api/chat. Ask me about my work.`}
         inputPlaceholder="Ask the demo assistant something…"
         apiPath="/api/chat"
       />
