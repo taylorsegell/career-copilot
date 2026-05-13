@@ -1,0 +1,45 @@
+@property --resume-assistant-border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes resume-assistant-border-spin {
+  to {
+    --resume-assistant-border-angle: 360deg;
+  }
+}
+
+@layer components {
+  .resume-assistant-trigger-shell {
+    --resume-assistant-border-angle: 0deg;
+    border-radius: 0.75rem;
+    padding: 2px;
+    background: conic-gradient(
+      from var(--resume-assistant-border-angle),
+      oklch(0.72 0.19 41) 0deg,
+      oklch(0.55 0.14 42) 70deg,
+      oklch(0.18 0 0) 160deg,
+      oklch(0.55 0.14 42) 250deg,
+      oklch(0.72 0.19 41) 360deg
+    );
+    animation: resume-assistant-border-spin 14s linear infinite;
+  }
+
+  .resume-assistant-panel-shell {
+    contain: layout style paint;
+    border-radius: 0.75rem;
+    padding: 2px;
+    background: linear-gradient(90deg, oklch(0.72 0.19 41), oklch(0.55 0.14 35));
+    box-shadow: 0 8px 30px -8px oklch(0.72 0.19 41 / 0.35);
+  }
+
+  .resume-assistant-panel-shell.resume-assistant-panel-shell--dock-right {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    border-radius: 0.75rem 0 0 0.75rem;
+    box-shadow: 0 8px 36px -10px oklch(0.72 0.19 41 / 0.38);
+  }
+}

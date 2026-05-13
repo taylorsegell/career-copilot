@@ -1,0 +1,13 @@
+{
+  "name": "career-copilot-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter portfolio-assistant-example dev",
+    "lint": "pnpm -r lint"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "unrs-resolver"]
+  },
+  "packageManager": "pnpm@11.1.1"
+}
